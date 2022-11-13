@@ -4,8 +4,12 @@
 
 - Create Package : flutter create --template=package PACKAGENAME
 
-- Create Flavors :
+- Create Flavors [IOS]:
 
+    <-- Need to work with XCode -->
+
+- Create Flavors [Android]:
+    
     -> android/app/build.gradle :
 
          <-- Add following lines inside android{} -->
