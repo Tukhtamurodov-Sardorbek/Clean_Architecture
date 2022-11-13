@@ -10,6 +10,7 @@
 
          <-- Add following lines inside android{} -->
             android {
+              ...
               flavorDimensions "flavor-type"
             
               productFlavors {
