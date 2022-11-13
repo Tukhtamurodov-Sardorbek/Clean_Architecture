@@ -52,3 +52,9 @@
          <-- Copy the following file "android/app/src/main/res" -->
          
          <-- Paste the copied file to each file we've created -->
+    
+    ![View](assets/readme/run_config.png)
+
+- TDD :
+
+    ![View](assets/readme/architecture.png)
