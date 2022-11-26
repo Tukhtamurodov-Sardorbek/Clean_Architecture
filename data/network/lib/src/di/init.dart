@@ -1,4 +1,5 @@
 import 'package:core/core.dart';
+import 'package:network/src/di/init.config.dart';
 
 late final GetIt moduleInjection;
 

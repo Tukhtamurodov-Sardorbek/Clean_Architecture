@@ -1,3 +1,4 @@
+import 'package:app_bloc/src/di/init.config.dart';
 import 'package:core/core.dart';
 
 late final GetIt moduleInjection;
