@@ -29,12 +29,12 @@ class Main {
   Future<void> _initInjections(Environment env) async {
     configureDependencies(env.name);
 
-    await Core.inject(locator, env.name);
+    await AppBloc.inject(locator, env.name);
     await Database.inject(locator, env.name);
     await Network.inject(locator, env.name);
+    await Core.inject(locator, env.name);
     await Repository.inject(locator, env.name);
     await UseCase.inject(locator, env.name);
-    await AppBloc.inject(locator, env.name);
   }
 
   Future<void> run(Environment env) async {
