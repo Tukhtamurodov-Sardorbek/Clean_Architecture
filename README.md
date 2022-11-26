@@ -1,4 +1,4 @@
-# flutter_project
+# Clean Architecture
 
 > TDD | Service Locator | Flavors | Local Packages | BLoC
 > GetIt | Injectable
@@ -10,7 +10,9 @@
 
   🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠
   
-- Create Package : flutter create --template=package PACKAGENAME
+- Create Package :
+
+             flutter create --template=package PACKAGENAME
 
   🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉🦉
 
