@@ -11,8 +11,8 @@ class App extends StatelessWidget {
         backgroundColor: Colors.blueGrey,
         title: const Text('Clean Architecture'),
       ),
-      body: Container(
-        color: Colors.blueGrey,
+      body: ColoredBox(
+        color: Colors.blueGrey.shade300,
       ),
     );
   }
