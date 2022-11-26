@@ -1,19 +1,21 @@
+import 'dart:math';
+
+import 'package:app_bloc/app_bloc.dart';
+import 'package:core/core.dart';
 import 'package:database/database.dart';
 import 'package:design_system/design_system.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:easy_logger/easy_logger.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:flutter_project/app.dart';
+import 'package:flutter_project/di/injector.dart';
 import 'package:flutter_project/flavors/base_config.dart';
-import 'package:core/core.dart';
-import 'package:app_bloc/app_bloc.dart';
 import 'package:network/network.dart';
 import 'package:repository/repository.dart';
 import 'package:usecase/usecase.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
-
-import 'app.dart';
-import 'di/injector.dart';
 
 class Main {
   final Environment environment;
@@ -39,7 +41,9 @@ class Main {
 
   Future<void> run(Environment env) async {
     final widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
-    FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+    // FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+
+    EasyLogger(name: '🌎 FLAVOR').warning('Running ${env.name}');
 
     if (kDebugMode) {
       Bloc.observer = AppBlocObserver();
@@ -65,20 +69,19 @@ class Main {
     final darkTheme = themes.firstWhere((element) => element.brightness == Brightness.dark);
 
     runApp(
-      DevicePreview(
-        enabled: F.appFlavor == Flavor.Development,
-        builder: (context) {
-          return EasyLocalization(
-            supportedLocales: const [
-              Locale('ru'),
-              Locale('uz'),
-              Locale('en'),
-            ],
-            useOnlyLangCode: true,
-            useFallbackTranslations: true,
-            fallbackLocale: const Locale('ru'),
-            path: 'packages/core/assets/translations/',
-            child: MaterialApp(
+      EasyLocalization(
+        supportedLocales: const [
+          Locale('ru'),
+          Locale('uz'),
+          Locale('en'),
+        ],
+        useOnlyLangCode: true,
+        useFallbackTranslations: true,
+        fallbackLocale: const Locale('ru'),
+        path: 'packages/core/assets/translations',
+        child: Builder(
+          builder: (context) {
+            return MaterialApp(
               debugShowCheckedModeBanner: false,
 
               darkTheme: darkTheme,
@@ -102,22 +105,22 @@ class Main {
                 return F.appFlavor == Flavor.Production
                     ? const App()
                     : SafeArea(
-                        child: Banner(
-                          location: BannerLocation.topStart,
-                          message: F.name,
-                          color: Colors.black,
-                          textStyle: const TextStyle(
-                            fontWeight: FontWeight.w700,
-                            fontSize: 14.0,
-                            letterSpacing: 1.0,
-                          ),
-                          child: const App(),
-                        ),
-                      );
+                  child: Banner(
+                    location: BannerLocation.topStart,
+                    message: F.name,
+                    color: Colors.black,
+                    textStyle: const TextStyle(
+                      fontWeight: FontWeight.w700,
+                      fontSize: 14.0,
+                      letterSpacing: 1.0,
+                    ),
+                    child: const App(),
+                  ),
+                );
               },
-            ),
-          );
-        },
+            );
+          }
+        ),
       ),
     );
   }
