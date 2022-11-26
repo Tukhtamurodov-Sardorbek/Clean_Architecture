@@ -1,7 +1,9 @@
 library network;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+import 'package:core/core.dart';
+import 'package:network/src/di/init.dart';
+
+class Network {
+  static inject(GetIt inject, String? environment) =>
+      configureInjection(inject, environment);
 }

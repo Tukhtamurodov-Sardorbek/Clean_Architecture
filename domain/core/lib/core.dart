@@ -1,5 +1,8 @@
 library core;
 
+import 'package:core/src/di/init.dart';
+import 'package:get_it/get_it.dart';
+
 export 'src/app_errors.dart';
 export 'src/di/environments.dart';
 export 'src/result.dart';
@@ -14,3 +17,8 @@ export 'package:equatable/equatable.dart';
 export 'package:flutter_multi_formatter/flutter_multi_formatter.dart';
 export 'package:get_it/get_it.dart';
 export 'package:injectable/injectable.dart';
+
+class Core {
+  static inject(GetIt inject, String? environment) =>
+      configureInjection(inject, environment);
+}

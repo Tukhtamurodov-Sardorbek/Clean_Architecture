@@ -13,23 +13,30 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
+  flutter_native_splash: ^2.2.14
 
-  app_bloc:
-    path: app/app_bloc
   feature_home:
     path: app/feature/feature_home
   design_system:
     path: app/design_system
+  network:
+    path: data/network
   database:
     path: data/database
-  core:
-    path: domain/core
-  model:
-    path: domain/model
   repository:
     path: domain/repository
   usecase:
     path: domain/usecase
+  app_bloc:
+    path: app/app_bloc
+  navigation:
+    path: app/navigation
+  core:
+    path: domain/core
+  model:
+    path: domain/model
+
+  device_preview: ^1.1.0
 
 dev_dependencies:
   flutter_test:
