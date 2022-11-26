@@ -1,6 +1,11 @@
 # flutter_project
 
-> TDD | Flavors | Local Packages | BLoC
+> TDD | Service Locator | Flavors | Local Packages | BLoC
+> GetIt | Injectable
+
+- Injectable: 
+- flutter pub run build_runner watch --delete-conflicting-outputs
+- flutter pub run build_runner build --delete-conflicting-outputs
 
 - Create Package : flutter create --template=package PACKAGENAME
 

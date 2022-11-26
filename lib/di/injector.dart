@@ -1,4 +1,5 @@
 import 'package:core/core.dart';
+import 'package:flutter_project/di/injector.config.dart';
 
 GetIt get locator => GetIt.instance();
 

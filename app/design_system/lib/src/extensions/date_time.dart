@@ -12,7 +12,7 @@ extension DateHelper on DateTime {
     isDifferentYear && !pattern.contains('y') && !pattern.contains('Y')
         ? '$pattern, y'
         : pattern;
-    final formatter = DateFormat(dateFormatter, LocaleKeys.lang.tr());
+    final formatter = DateFormat(dateFormatter);
     return formatter.format(this);
   }
 
@@ -23,9 +23,9 @@ extension DateHelper on DateTime {
     final dateToCheck = DateTime(year, month, day);
 
     if (dateToCheck == today) {
-      return LocaleKeys.today.tr();
+      return 'Today';
     } else if (dateToCheck == yesterday) {
-      return LocaleKeys.yesterday.tr();
+      return 'Yesterday';
     }
     return formatDate(pattern);
   }

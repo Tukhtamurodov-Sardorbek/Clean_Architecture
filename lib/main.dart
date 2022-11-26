@@ -4,24 +4,24 @@ import 'package:core/core.dart';
 
 void mainCommon() {
   runApp(
-      MaterialApp(
+    MaterialApp(
       debugShowCheckedModeBanner: false,
-      builder: F.appFlavor == Flavor.prod
-          ? null
-          : (context, child) {
-        return SafeArea(
-          child: Banner(
-            location: BannerLocation.topStart,
-            message: F.name,
-            color: Colors.black,
-            textStyle: const TextStyle(
-              fontWeight: FontWeight.w700,
-              fontSize: 14.0,
-              letterSpacing: 1.0,
-            ),
-            child: const MyApp(),
-          ),
-        );
+      builder: (context, child) {
+        return F.appFlavor == Flavor.prod
+            ? const MyApp()
+            : SafeArea(
+                child: Banner(
+                  location: BannerLocation.topStart,
+                  message: F.name,
+                  color: Colors.black,
+                  textStyle: const TextStyle(
+                    fontWeight: FontWeight.w700,
+                    fontSize: 14.0,
+                    letterSpacing: 1.0,
+                  ),
+                  child: const MyApp(),
+                ),
+              );
       },
     ),
   );
