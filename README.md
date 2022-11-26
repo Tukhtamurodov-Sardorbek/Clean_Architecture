@@ -4,14 +4,17 @@
 > GetIt | Injectable
 
 - Injectable: 
-- flutter pub run build_runner watch --delete-conflicting-outputs
-- flutter pub run build_runner build --delete-conflicting-outputs
+             flutter pub run build_runner watch --delete-conflicting-outputs
+             flutter pub run build_runner build --delete-conflicting-outputs
+
 
 - Create Package : flutter create --template=package PACKAGENAME
+
 
 - Create Flavors [IOS]:
 
     <-- Need to work with XCode -->
+
 
 - Create Flavors [Android]:
     
@@ -63,6 +66,7 @@
          <-- Paste the copied file to each file we've created -->
     
     ![View](assets/readme/run_config.png)
+
 
 - TDD :
 
