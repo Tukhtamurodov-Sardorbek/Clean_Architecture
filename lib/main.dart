@@ -41,7 +41,7 @@ class Main {
 
   Future<void> run(Environment env) async {
     final widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
-    // FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+    FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
     EasyLogger(name: '🌎 FLAVOR').warning('Running ${env.name}');
 
@@ -81,6 +81,7 @@ class Main {
         path: 'packages/core/assets/translations',
         child: Builder(
           builder: (context) {
+            FlutterNativeSplash.remove();
             return MaterialApp(
               debugShowCheckedModeBanner: false,
 
