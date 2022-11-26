@@ -3,18 +3,22 @@
 > TDD | Service Locator | Flavors | Local Packages | BLoC
 > GetIt | Injectable
 
-- Injectable: 
+- Injectable:
+
              flutter pub run build_runner watch --delete-conflicting-outputs
              flutter pub run build_runner build --delete-conflicting-outputs
 
-
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  
 - Create Package : flutter create --template=package PACKAGENAME
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Create Flavors [IOS]:
 
     <-- Need to work with XCode -->
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Create Flavors [Android]:
     
@@ -67,6 +71,7 @@
     
     ![View](assets/readme/run_config.png)
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - TDD :
 
