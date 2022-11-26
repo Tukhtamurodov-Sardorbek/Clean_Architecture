@@ -1,2 +1,3 @@
 library core;
-export 'src/environments.dart';
+export 'src/di/environments.dart';
+export 'package:get_it/get_it.dart';

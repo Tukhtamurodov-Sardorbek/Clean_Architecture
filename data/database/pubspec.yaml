@@ -12,10 +12,16 @@ dependencies:
     sdk: flutter
 
   flutter_secure_storage: ^6.0.0
+  hive_flutter: ^1.1.0
+
+  core:
+    path: ../../domain/core
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  lint: ^1.10.0
+  build_runner: ^2.3.2
+  injectable_generator: ^1.5.5
 
 flutter:
