@@ -2,6 +2,7 @@
 
 > TDD | Service Locator | Flavors | Local Packages | BLoC | GetIt | Injectable
 
+
 - Injectable:
 
              flutter pub run build_runner watch --delete-conflicting-outputs
