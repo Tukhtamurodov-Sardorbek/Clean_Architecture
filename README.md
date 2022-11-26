@@ -1,7 +1,6 @@
 # Clean Architecture
 
-> TDD | Service Locator | Flavors | Local Packages | BLoC
-> GetIt | Injectable
+> TDD | Service Locator | Flavors | Local Packages | BLoC | GetIt | Injectable
 
 - Injectable:
 
