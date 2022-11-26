@@ -1,13 +1,13 @@
 import 'package:injectable/injectable.dart';
 
 enum Flavor {
-  prod,
-  beta,
-  dev,
-  mock
+  Beta,
+  Development,
+  Mock,
+  Production,
 }
 
-const Environment envMock = Environment('mock');
-const Environment envDev = Environment('dev');
-const Environment envBeta = Environment('beta');
-const Environment envProd = Environment('prod');
+const Environment betaEnv = Environment('beta');
+const Environment developmentEnv = Environment('dev');
+const Environment mockEnv = Environment('mock');
+const Environment productionEnv = Environment('prod');

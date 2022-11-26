@@ -10,16 +10,16 @@ abstract class CoreModule {
     return PackageInfo.fromPlatform();
   }
 
-  @envDev
-  @envBeta
-  @envMock
+  @developmentEnv
+  @betaEnv
+  @mockEnv
   @lazySingleton
   Alice provideAliceDev() {
     final Alice alice = Alice();
     return alice;
   }
 
-  @envProd
+  @productionEnv
   @lazySingleton
   Alice provideAliceProd() {
     throw MissingPluginException();

@@ -3,6 +3,6 @@ import 'package:flutter_project/flavors/base_config.dart';
 import 'package:flutter_project/main.dart';
 
 void main() {
-  F.appFlavor = Flavor.mock;
-  mainCommon();
+  F.appFlavor = Flavor.Mock;
+  Main.runner(environment: F.appEnvironment);
 }

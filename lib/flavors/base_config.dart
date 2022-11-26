@@ -1,22 +1,35 @@
 import 'package:core/core.dart';
 
 mixin F {
-  static Flavor? appFlavor;
+  static late Flavor appFlavor;
 
-  static String get name => appFlavor?.name ?? 'Flavor';
+  static String get name => appFlavor.name;
 
   static String get appName {
     switch (appFlavor) {
-      case Flavor.prod:
+      case Flavor.Production:
         return 'Clean Architecture';
-      case Flavor.beta:
+      case Flavor.Beta:
         return 'Clean Architecture.beta';
-      case Flavor.dev:
+      case Flavor.Development:
         return 'Clean Architecture.dev';
-      case Flavor.mock:
+      case Flavor.Mock:
         return 'Clean Architecture.mock';
       default:
         return 'Clean Architecture';
+    }
+  }
+
+  static Environment get appEnvironment {
+    switch (appFlavor) {
+      case Flavor.Production:
+        return productionEnv;
+      case Flavor.Beta:
+        return betaEnv;
+      case Flavor.Development:
+        return developmentEnv;
+      case Flavor.Mock:
+        return mockEnv;
     }
   }
 }
