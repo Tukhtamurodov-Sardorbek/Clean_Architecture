@@ -1,7 +1,7 @@
 name: design_system
 description: A new Flutter package project.
 version: 0.0.1
-homepage:
+publish_to: 'none'
 
 environment:
   sdk: '>=2.18.0 <3.0.0'
@@ -10,11 +10,36 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  json_theme: ^4.0.3+1
+  flutter_svg: ^1.1.6
+  mask_text_input_formatter: ^2.4.0
+  flutter_screenutil: ^5.6.0
+  modal_bottom_sheet: ^2.1.2
+  percent_indicator: ^4.2.2
+  expandable_page_view: ^1.0.17
+  easy_refresh: ^3.0.4+4
+  carousel_slider: ^4.1.1
+  shimmer: ^2.0.0
+  sliver_tools: ^0.2.8
+  flash: ^2.0.5
+  pinput: ^2.2.16
+  infinite_scroll_pagination: ^3.2.0
+  simple_animations: ^5.0.0+2
+  logger: ^1.1.0
+  readmore: ^2.2.0
+  animated_flip_counter: ^0.2.5
+  fluttertoast: ^8.1.1
+  google_fonts: ^3.0.1
+
+  core:
+    path: ../../domain/core
+  model:
+    path: ../../domain/model
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  lint: ^1.10.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -22,17 +47,11 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
 
-  # To add assets to your package, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
-  #
-  # For details regarding assets in packages, see
-  # https://flutter.dev/assets-and-images/#from-packages
-  #
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/assets-and-images/#resolution-aware
+  uses-material-design: true
 
+  assets:
+    - assets/
+  
   # To add custom fonts to your package, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
