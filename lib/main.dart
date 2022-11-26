@@ -56,8 +56,8 @@ class Main {
       _initInjections(env),
       EasyLocalization.ensureInitialized(),
       SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge),
-      // AppTheme.getAppThemeLight(),
-      // AppTheme.getAppThemeDark(),
+      AppTheme.getAppThemeLight(),
+      AppTheme.getAppThemeDark(),
     ]);
 
     final themes = result.whereType<ThemeData>();
