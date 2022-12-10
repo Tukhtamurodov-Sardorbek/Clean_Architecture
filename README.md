@@ -7,22 +7,17 @@
 
 
 <h4><details>
-  <summary>  Injectable  </summary>
+  <summary>  [Injectable](https://blog.logrocket.com/dependency-injection-flutter-using-getit-injectable/)  </summary>
 
              flutter pub run build_runner watch --delete-conflicting-outputs
              flutter pub run build_runner build --delete-conflicting-outputs
 </details></h4>
 
-- [Injectable](https://blog.logrocket.com/dependency-injection-flutter-using-getit-injectable/):
-
-             flutter pub run build_runner watch --delete-conflicting-outputs
-             flutter pub run build_runner build --delete-conflicting-outputs
-
-  
-  
-- Create Package :
+<h4><details>
+  <summary>  Create Package  </summary>
 
              flutter create --template=package PACKAGENAME
+</details></h4>
 
   
 
