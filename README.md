@@ -2,8 +2,17 @@
 
 > TDD | Service Locator | Flavors | Local Packages | BLoC | GetIt | Injectable
 
+- [Melos](https://mediaum.com/flutter-community/managing-multi-package-flutter-projects-with-melos-c8ce96fa7c82)
+             dart pub global activate melos
 
-- Injectable:
+
+<h4><details>
+  <summary> Injectable </summary>
+             flutter pub run build_runner watch --delete-conflicting-outputs
+             flutter pub run build_runner build --delete-conflicting-outputs
+</details></h4>
+
+- [Injectable](https://blog.logrocket.com/dependency-injection-flutter-using-getit-injectable/):
 
              flutter pub run build_runner watch --delete-conflicting-outputs
              flutter pub run build_runner build --delete-conflicting-outputs

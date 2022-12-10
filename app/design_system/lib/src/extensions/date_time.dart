@@ -8,10 +8,8 @@ extension DateHelper on DateTime {
   String formatDate([String pattern = 'dd MMMM, y']) {
     final currentYear = DateTime.now().year;
     final isDifferentYear = currentYear != year;
-    final dateFormatter =
-    isDifferentYear && !pattern.contains('y') && !pattern.contains('Y')
-        ? '$pattern, y'
-        : pattern;
+    final dateFormatter = isDifferentYear && !pattern.contains('y') && !pattern.contains('Y')
+        ? '$pattern, y' : pattern;
     final formatter = DateFormat(dateFormatter);
     return formatter.format(this);
   }
