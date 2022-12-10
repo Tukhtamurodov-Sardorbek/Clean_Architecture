@@ -1,6 +1,6 @@
 # Clean Architecture
 
-> TDD | Service Locator | Flavors | Local Packages | BLoC | GetIt | Injectable
+ TDD | Flavors | Local Packages | BLoC | GetIt | Injectable
  
 <h4><details>
   <summary>  Melos  </summary>
