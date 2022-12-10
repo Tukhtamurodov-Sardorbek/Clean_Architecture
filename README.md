@@ -1,35 +1,42 @@
 # Clean Architecture
 
 > TDD | Service Locator | Flavors | Local Packages | BLoC | GetIt | Injectable
+ 
+<h4><details>
+  <summary>  Melos  </summary>
 
-- [Melos](https://mediaum.com/flutter-community/managing-multi-package-flutter-projects-with-melos-c8ce96fa7c82)
-             dart pub global activate melos
-
+             dart pub global activate melos 
+    (https://mediaum.com/flutter-community/managing-multi-package-flutter-projects-with-melos-c8ce96fa7c82)
+</details></h4>
 
 <h4><details>
-  <summary>  [Injectable](https://blog.logrocket.com/dependency-injection-flutter-using-getit-injectable/)  </summary>
+  <summary>  Injectable  </summary>
 
              flutter pub run build_runner watch --delete-conflicting-outputs
              flutter pub run build_runner build --delete-conflicting-outputs
+    (https://blog.logrocket.com/dependency-injection-flutter-using-getit-injectable/)
+    (https://rodrigolmti.medium.com/flutter-di-a-true-love-story-1e5a5ae2ba2d)
 </details></h4>
 
 <h4><details>
   <summary>  Create Package  </summary>
 
              flutter create --template=package PACKAGENAME
+    (https://blog.logrocket.com/how-to-create-dart-packages-for-flutter/)
+    (https://medium.com/vijay-r/creating-local-package-in-flutter-9ea89c3b8361)
 </details></h4>
 
-  
 
-- Create Flavors [IOS]:
-
+<h4><details>
+  <summary>  Create Flavors [IOS]  </summary>
     <-- Need to work with XCode -->
+</details></h4>
 
-  
 
-- Create Flavors [Android]:
-    
-    -> android/app/build.gradle :
+<h4><details>
+  <summary>  Create Flavors [Android]  </summary>
+
+  -> android/app/build.gradle :
 
          <-- Add following lines inside android{} -->
             android {
@@ -60,8 +67,8 @@
               }
             }
 
-    -> android/app/src :
- 
+  -> android/app/src :
+
          <-- Create the following files -->
 
             android/app/src/prod 
@@ -75,11 +82,15 @@
          <-- Copy the following file "android/app/src/main/res" -->
          
          <-- Paste the copied file to each file we've created -->
-    
-    ![View](assets/readme/run_config.png)
 
+  ![View](assets/readme/run_config.png)
+
+</details></h4>
   
 
-- TDD :
+<h4><details>
+  <summary>  TDD  </summary>
 
     ![View](assets/readme/architecture.png)
+</details></h4>
+
