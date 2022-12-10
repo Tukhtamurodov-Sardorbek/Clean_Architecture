@@ -6,6 +6,7 @@
   <summary>  Melos  </summary>
 
              dart pub global activate melos 
+             melos bootstrap
   (https://mediaum.com/flutter-community/managing-multi-package-flutter-projects-with-melos-c8ce96fa7c82)
 </details></h4>
   <br/>
