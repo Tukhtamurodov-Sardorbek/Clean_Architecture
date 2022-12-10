@@ -9,7 +9,7 @@
              melos bootstrap
   (https://mediaum.com/flutter-community/managing-multi-package-flutter-projects-with-melos-c8ce96fa7c82)
 </details></h4>
-  <br/>
+
 
 <h4><details>
   <summary>  Injectable  </summary>
@@ -19,7 +19,7 @@
   (https://blog.logrocket.com/dependency-injection-flutter-using-getit-injectable/)
   (https://rodrigolmti.medium.com/flutter-di-a-true-love-story-1e5a5ae2ba2d)
 </details></h4>
-  <br/>
+
 
 <h4><details>
   <summary>  Create Package  </summary>
@@ -28,19 +28,19 @@
   (https://blog.logrocket.com/how-to-create-dart-packages-for-flutter/)
   (https://medium.com/vijay-r/creating-local-package-in-flutter-9ea89c3b8361)
 </details></h4>
-  <br/>
+
 
 <h4><details>
   <summary>  Create Flavors [IOS]  </summary>
-      <-- Need to work with XCode -->
+  <-- Need to work with XCode -->
 </details></h4>
-  <br/>
+
 
 <h4><details>
   <summary>  Create Flavors [Android]  </summary>
 
   -> android/app/build.gradle :
-  
+             
            <-- Add following lines inside android{} -->
               android {
                 ...
@@ -87,7 +87,6 @@
            <-- Paste the copied file to each file we've created -->
   
   ![View](assets/readme/run_config.png)
-
 </details></h4>
   <br/>
 <h4><details>
